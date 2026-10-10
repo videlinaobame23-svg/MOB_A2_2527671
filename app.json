@@ -1,25 +1,25 @@
 {
   "expo": {
-    "name": "OBAME_Videlina_Portfolio",
-    "slug": "OBAME_Videlina_Portfolio",
+    "name": "OBAMEPortfolio",
+    "slug": "obameportfolio",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+      "package": "com.obame.portfolio"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow OBAMEPortfolio to access your photos to set your profile picture.",
+          "cameraPermission": "Allow OBAMEPortfolio to access your camera to take your profile picture."
+        }
+      ]
+    ]
   }
 }
