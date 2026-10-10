@@ -5,12 +5,17 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "package": "com.obame.portfolio"
+      "package": "com.obame.portfolio",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
       [
@@ -20,6 +25,11 @@
           "cameraPermission": "Allow OBAMEPortfolio to access your camera to take your profile picture."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "73c0ec1b-5620-4461-9c67-43db738a6996"
+      }
+    }
   }
 }
