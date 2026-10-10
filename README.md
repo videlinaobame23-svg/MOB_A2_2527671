@@ -4,10 +4,11 @@ My name is OBAME Videlina Ketsia.
 **App Name:** OBAMEPortfolio  
 **Verification Code:** MOB-A2-7671  
 **Version:** 1.0.0  
-**Final Commit Hash:** [PASTE HERE — run `git log -1 --format=%H` after the final push]  
-**Release Link:** https://github.com/[videlinaobame23-svg]/MOB_A2_2527671/releases/tag/v1.0.0  
-**APK Link:** https://github.com/[videlinaobame23-svg]/MOB_A2_2527671/releases/download/v1.0.0/MOB_A2_2527671.apk  
+**Release Link:** https://github.com/videlinaobame23-svg/MOB_A2_2527671/releases/tag/v1.0.0  
+**APK Link:** https://github.com/videlinaobame23-svg/MOB_A2_2527671/releases/download/v1.0.0/MOB_A2_2527671.apk  
+**Demo Video Link:** https://github.com/videlinaobame23-svg/MOB_A2_2527671/releases/download/v1.0.0/MOB_A2_2527671_DEMO.mp4  
 
+---
 phone infos 
 
 - Model: Samsung Galaxy S20 5G
@@ -35,3 +36,32 @@ A personal portfolio Android application that presents my identity, skills, educ
 ```bash
 npm install
 npx expo start
+
+EAS Build Command
+bash
+eas build --platform android --profile preview
+
+
+OBAME_Videlina_Portfolio/
+├── App.tsx
+├── index.js
+├── app.json
+├── eas.json
+├── package.json
+├── tsconfig.json
+├── src/
+│   ├── components/        Reusable UI (ProfileCard, SkillCard, EducationCard, ProjectCard, ValidatedInput)
+│   ├── screens/           HomeScreen, SkillsScreen, ProjectsScreen, ProjectDetailScreen, ProfileEditorScreen, AboutScreen
+│   ├── navigation/        AppNavigator, types
+│   ├── context/           ProfileContext (AsyncStorage-backed)
+│   ├── constants/         theme, data
+│   ├── types/             TypeScript interfaces
+│   └── utils/
+├── assets/
+├── docs/
+│   └── MOB_A2_2527671_UIUX.pdf
+└── evidence/
+    ├── MOB_A2_2527671_TEST_LOG.pdf
+    ├── MOB_A2_2527671_DECLARATION.pdf
+    └── AI_USE.md 
+    
